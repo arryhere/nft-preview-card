@@ -45,6 +45,7 @@ body {
     font-size: 22px;
     line-height: 28px;
     margin: 20px 0 10px 0;
+    display: inline-block;
     cursor: pointer;
 }
 
