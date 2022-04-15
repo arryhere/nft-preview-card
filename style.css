@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* neutral */
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+.card {
+    width: 450px;
+    background-color: var(--card-bg);
+    color: var(--soft-blue);
+    padding: 25px;
+    border-radius: 2%;
+    font-weight: 300;
+    line-height: 26px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.card h2 {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    margin: 20px 0 10px 0;
+    cursor: pointer;
+}
+
+.card:hover h2 {
+    color: var(--cyan);
+    transition: all 0.3s;
+}
+
+.nft-card-img {
+    width: 100%;
+    border-radius: 2%;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.price,
+.time {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.price img,
+.time img {
+    margin-right: 5px;
+}
+
+.price:nth-child(1) {
+    color: var(--cyan);
+}
+
+.image-overlay {
+    background-color: var(--cyan);
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    top: 25px;
+    border-radius: 2%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.image-overlay:hover {
+    opacity: 65%;
+    transition: all 0.3s;
+}
+
+.creator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+}
+.creator img {
+    width: 50px;
+    border: 2px solid var(--white);
+    border-radius: 100%;
+}
+.creator-name {
+    color: var(--white);
+    cursor: pointer;
+}
+.creator-name:hover {
+    color: var(--cyan);
+    transition: all 0.3s;
+}
+
+/* --------------------------------- */
